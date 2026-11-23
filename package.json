@@ -1,0 +1,29 @@
+{
+  "name": "qa-automation-bugfix-showcase",
+  "version": "1.0.0",
+  "description": "Production-ready End-to-End (E2E) testing framework and real-world troubleshooting case logs for modern web applications (**Next.js, React, TypeScript, Node.js, Prisma, PostgreSQL**).",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorBushman/qa-automation-bugfix-showcase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/IgorBushman/qa-automation-bugfix-showcase/issues"
+  },
+  "homepage": "https://github.com/IgorBushman/qa-automation-bugfix-showcase#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

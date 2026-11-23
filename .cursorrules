@@ -1,0 +1,15 @@
+# Senior QA Automation & Bugfix Rules
+
+1. **Test Architecture (Playwright + TypeScript):**
+   - Always prefer resilient user-facing locators (getByRole, getByLabel, getByText, getByTestId). Never use brittle XPath or auto-generated CSS class selectors.
+   - Never use hardcoded timeouts (page.waitForTimeout()). Always rely on Playwright web-first assertions (xpect(locator).toBeVisible()).
+   - Keep tests independent, atomic, and clean up any created test data.
+
+2. **Bugfix Workflow:**
+   - Before fixing a bug, reproduce it with a failing Playwright test or clear reproduction steps.
+   - Make minimal, surgical code changes to fix the root cause without breaking existing features.
+   - Always run 
+px playwright test after making changes to verify 100% pass rate before finishing.
+
+3. **Security & Git:**
+   - Never hardcode secrets, tokens, or passwords in test files; read them from process.env.
